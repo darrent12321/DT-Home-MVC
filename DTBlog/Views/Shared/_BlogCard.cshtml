@@ -1,0 +1,13 @@
+@model DTBlog.Models.Blog
+    <a asp-area="" asp-controller="Home" asp-action="@Model.Link">
+        <div class="card">
+            <div class="icon">
+                <img src=@Model.Image alt="">
+            </div>
+            <div class="content">
+                <h3>@Model.Title</h3>
+                <p>@Html.Raw(@Model.PostText)</p>
+            </div>
+            <a class="more"></a>
+        </div>
+    </a>

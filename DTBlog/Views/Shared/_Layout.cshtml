@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <nav>
+                <a asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
+                <a asp-area="" asp-controller="Home" asp-action="About">ABOUT</a>
+            </nav>
+        </header>
+        
+        <div class="intro">
+            <div class="intro-text">
+                <h2>First steps to web development...</h2>
+                <P>DARREN TILEY</P>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <main role="main" class="main">
+                @RenderBody()
+            </main>
+        </div>
+            
+        <footer>
+            <p style="padding: 20px;">Copyright &copy; 2021 DarrenT</p>
+        </footer>
+    </div>
+</body>
+</html>

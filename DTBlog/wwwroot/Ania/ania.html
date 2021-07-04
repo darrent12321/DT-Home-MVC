@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ania.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="life-boat"><h2>Javascript</h2>
+                <div class="life">
+                    <button onmouseover="move()" id="life-btn">Click here for the meaning of life</button>
+                    <script>
+                        function move(){
+                            const btn = document.querySelector('#life-btn');
+                            btn.style.left = btn.style.left === "60%" ? '10%' : '60%';
+                        }
+                        </script>
+                </div>
+            </div>
+            <div class="intro">
+                <div>
+                    <a href="https://www.youtube.com/c/AniaKub&oacutew/" target="_blank"><img src="/Ania/images/ania.jpg" alt=""></a>
+                </div>
+                <div id="desc-text">
+                    <br>
+                    <p>Ania Kub&oacutew has a YouTube channel with lots of excellent Javascript tutorials presented in a fun way! Easy to follow along with lots of scope to expand the ideas. </p>
+                    <p>Thanks <a href="https://www.youtube.com/c/AniaKub%C3%B3w/" target="_blank">Ania</a> for some Javascript fun! </p>
+                </div>
+            </div>
+            <div class="links">
+                <div class="t2">
+                    <a href="/Ania/Flappy/index.html"><img src="/Ania/images/Flappy.png" alt=""></a>
+                    <p>Flappy Birds game with extra styling, score board, music and my own original bird!</p>
+                </div>
+
+            </div>
+            <div class="links">
+                <div class="t3">
+                    <a href="/Ania/FlappyOriginal/"><img src="/Ania/images/Flappy.png" alt=""></a>
+                    <p>Original Flappy Bird game from Ania without any formatting.</p>
+                </div>
+                <div class="t3">
+                    <a href="/Ania/Doodle/index.html"><img src="/Ania/images/Doodle.png" alt=""></a>
+                    <p>Original Doodle Jump game, no formatting yet, just the coloured divs.</p>
+                </div>
+                <div class="t3">
+                    <a href="/Ania/2048/index.html"><img src="/Ania/images/2048.png" alt="2048.png" alt=""></a>
+                    <p>Original 2048 game, again will come back to the styling later!</p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <footer>
+
+        <p style="padding: 20px;">Copyright &copy; 2021 DarrenT</p>
+    </footer>
+</body>
+</html>
